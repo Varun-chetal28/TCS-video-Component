@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCSwebpage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bodyhtml">
+    <div class="wrapper" id="home">
+      <header class="container">
+        <nav class="navigation">
+          <div class="nav-bar inner flex">
+            <h2><span class="blue">T</span>CS</h2>
+            <ul class="menu flex" id="menus">
+              <li><a href="#" class="blue"> Home</a></li>
+              <li><a href="#"> Abous Us</a></li>
+              <li><a href="#"> Contact</a></li>
+              <li><a href="#"> Help</a></li>
+            </ul>
+            <span class="toggle-btn" onclick="toggle()">&#9776;</span>
+          </div>
+        </nav>
+        <div class="banner inner">
+          <h1>Welcome to my Page</h1>
+          <p>
+            I have done this assignment for my practice and it has helped me
+            learn conecpts
+          </p>
+        </div>
+        <button id="vidbutton">Pause</button>
+        <!-- Not Visible -->
+      </header>
+      <div class="video-container">
+        <div class="color-overlay"></div>
+        <video id="ocean_video" autoplay loop muted>
+          <source src="Pexels Videos 2632737.mp4" />
+        </video>
+      </div>
+    </div>
+    <section class="story_body">
+      <h2 class="story-heading">Stories</h2>
+      <div class="story-section">
+        <div class="story_img">
+          <img class="story-click active-class " src="pic1.jpg" alt="" />
+          <p class="storytxt">Image 1</p>
+        </div>
+
+        <div class="story_img">
+          <img class=" story-click active-class " src="pic2.jpg" alt="" />
+          <p class="storytxt">Image 2</p>
+        </div>
+
+        <div class="story_img">
+          <img class="story-click active-class" src="pic3.jpg" alt="" />
+          <p class="storytxt">Image 3</p>
+        </div>
+
+        <div class="story_img">
+          <img class="story-click active-class" src="pic4.jpg" alt="" />
+          <p class="storytxt">Image 4</p>
+        </div>
+
+        <div class="story_img">
+          <img class="story-click active-class" src="pic5.jpg" alt="" />
+          <p class="storytxt">Image 5</p>
+        </div>
+
+        <div class="story_img">
+          <img class="story-click active-class" src="pic6.jpg" alt="" />
+          <p class="storytxt">Image 6</p>
+        </div>
+      </div>
+      <div class="modal-container hide-display">
+        <button class="closebtn" id="closebtn"> Close</button>
+          <div class="modal-img-container">
+            <img class="modal-img remove-display" src="pic1.jpg" alt="">
+          </div>
+      </div>
+    </section>
+
+    <section class="swiper_body">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic1.jpg" alt="" />
+              <p class="txtimg">This is the first image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic2.jpg" alt="" />
+              <p class="txtimg">This is the second image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic3.jpg" alt="" />
+              <p class="txtimg">This is the third image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic4.jpg" alt="" />
+              <p class="txtimg">This is the fourth image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic5.jpg" alt="" />
+              <p class="txtimg">This is the fifth image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic6.jpg" alt="" />
+              <p class="txtimg">This is the sixth image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic7.jpg" alt="" />
+              <p class="txtimg">This is the seventh image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic8.jpg" alt="" />
+              <p class="txtimg">This is the eighth image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic9.jpg" alt="" />
+              <p class="txtimg">This is the ninth image of my swiper slide</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="pic10.jpg" alt="" />
+              <p class="txtimg">This is the tenth image of my swiper slide</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
+</html>
